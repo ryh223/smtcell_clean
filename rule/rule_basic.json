@@ -1,0 +1,62 @@
+{
+    "unit": {
+        "value": "2000"
+    },
+    "CPP": {
+        "value": "108"
+    },
+    "M1P": {
+        "value": "72"
+    },
+    "M1_offset": {
+        "value": "0"
+    },
+    "M1_width": {
+        "value": "36"
+    },
+    "M2P": {
+        "value": "72"
+    },
+    "M2_offset": {
+        "value": "0"
+    },
+    "M2_width": {
+        "value": "36"
+    },
+    "M3P": {
+        "value": "72"
+    },
+    "M3_offset": {
+        "value": "0"
+    },
+    "M3_width": {
+        "value": "36"
+    },
+    "V0_M1_EN": {
+        "value": [["10", "10"], ["10", "0"]]
+    },
+    "V1_M1_EN": {
+        "value": [["10", "4"]]
+    },
+    "V1_M2_EN": {
+        "value": [["10", "10"], ["10", "0"]]
+    },
+    "V2_M2_EN": {
+        "value": [["10", "10"]]
+    },
+    "V2_M3_EN": {
+        "value": [["10", "10"]]
+    },
+    "V3_M3_EN": {
+        "value": [["10", "10"]]
+    },
+    "FinWidth": {
+        "value": "14"
+    },
+    "FinPitch": {
+        "value": "54"
+    },
+    "GateWidth": {
+        "value": "40"
+    }
+}

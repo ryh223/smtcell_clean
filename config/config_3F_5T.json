@@ -1,0 +1,78 @@
+{
+    "z3_seed": {
+        "value": 42,
+        "description": "Z3 random seed"
+    },
+    "NumTrack": {
+        "value": 5,
+        "description": "Number of tracks"
+    },
+    "NumFin": {
+        "value": 3,
+        "description": "Number of Fins (based on NumTrack)"
+    },
+    "BoundaryCondition": {
+        "value": 0,
+        "description": "Boundary condition type (0: fixed, 1: Extensible)"
+    },
+    "SON": {
+        "value": 1,
+        "description": "If enable super outter node"
+    },
+    "DoublePowerRail": {
+        "value": 0,
+        "description": ""
+    },
+    "MM_Parameter": {
+        "value": 4,
+        "description": "The number of metal layers + 1"
+    },
+    "EXT_Parameter": {
+        "value": 0,
+        "description": "only 0"
+    },
+    "BCP_Parameter": {
+        "value": 1,
+        "description": "If enable conditional assignment loop"
+    },
+    "MPL_Parameter": {
+        "value": 2,
+        "description": "minimum pin length(for pin access)"
+    },
+    "XOL_Mode": {
+        "value": 2,
+        "description": "0: SDB, 1:DDB, 2:(Default)SDB/DDB mixed"
+    },
+    "NDE_Parameter": {
+        "value": 0,
+        "description": "If allow multi-height S/D share"
+    },
+    "Partition_Parameter": {
+        "value": 0,
+        "description": "0: Disable(Default) 1. Cell Partitioning"
+    },
+    "ML_Parameter": {
+        "value": 5,
+        "description": "Min Metal Length for avoiding adjacent signal(crosstalk between differential clock signals in the sequential logic cells)"
+    },
+    "Local_Parameter": {
+        "value": 1,
+        "description": "If use localization of the routing region to reduce the solution space"
+    },
+    "tolerance_Parameter": {
+        "value": 3,
+        "description": "Localization Offset Margin"
+    },
+    "BS_Parameter": {
+        "value": 1,
+        "description": "0: Disable(Default) 1: Enable BS(Breaking Symmetry)"
+    },
+    "objpart_Parameter": {
+        "value": 0,
+        "description": ""
+    },
+    "XOL_Parameter": {
+        "value": 2,
+        "description": ""
+    }
+}
