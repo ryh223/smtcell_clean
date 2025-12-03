@@ -18,43 +18,43 @@ public:
   // disable partition when info is not provided to avoid error
   void checkPartition_Parameter(int sizeOfPartition);
 
-  int getNumFin() { return NumFin_; }
+  int getNumFin() const { return NumFin_; }
 
-  int getNumTrack() { return NumTrack_; }
+  int getNumTrack() const { return NumTrack_; }
 
-  int getZ3Seed() { return Z3Seed_; }
+  int getZ3Seed() const { return Z3Seed_; }
 
-  int getBoundaryCondition() { return BoundaryCondition_; }
+  int getBoundaryCondition() const { return BoundaryCondition_; }
 
-  int getSON() { return SON_; }
+  int getSON() const { return SON_; }
 
-  int getDoublePowerRail() { return DoublePowerRail_; }
+  int getDoublePowerRail() const { return DoublePowerRail_; }
 
-  int getMM_Parameter() { return MM_Parameter_; }
+  int getMM_Parameter() const { return MM_Parameter_; }
 
-  int getEXT_Parameter() { return EXT_Parameter_; }
+  int getEXT_Parameter() const { return EXT_Parameter_; }
 
-  int getBCP_Parameter() { return BCP_Parameter_; }
+  int getBCP_Parameter() const { return BCP_Parameter_; }
 
-  int getMPL_Parameter() { return MPL_Parameter_; }
+  int getMPL_Parameter() const { return MPL_Parameter_; }
 
-  int getXOL_Mode() { return XOL_Mode_; }
+  int getXOL_Mode() const { return XOL_Mode_; }
 
-  int getNDE_Parameter() { return NDE_Parameter_; }
+  int getNDE_Parameter() const { return NDE_Parameter_; }
 
-  int getPartition_Parameter() { return Partition_Parameter_; }
+  int getPartition_Parameter() const { return Partition_Parameter_; }
 
-  int getML_Parameter() { return ML_Parameter_; }
+  int getML_Parameter() const { return ML_Parameter_; }
 
-  int getLocal_Parameter() { return Local_Parameter_; }
+  int getLocal_Parameter() const { return Local_Parameter_; }
 
-  int getTolerance_Parameter() { return tolerance_Parameter_; }
+  int getTolerance_Parameter() const { return tolerance_Parameter_; }
 
-  int getBS_Parameter() { return BS_Parameter_; }
+  int getBS_Parameter() const { return BS_Parameter_; }
 
-  int getObjpart_Parameter() { return objpart_Parameter_; }
+  int getObjpart_Parameter() const { return objpart_Parameter_; }
 
-  int getXOL_Parameter() { return XOL_Parameter_; }
+  int getXOL_Parameter() const { return XOL_Parameter_; }
 
 private:
 

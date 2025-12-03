@@ -1,4 +1,4 @@
-#include "dbConfig.h"
+#include "dbConfig.hpp"
 
 dbConfig::dbConfig(const std::string &config_path, std::string infile) {
   std::ifstream config_file(config_path);
@@ -8,7 +8,7 @@ dbConfig::dbConfig(const std::string &config_path, std::string infile) {
   // parse into variables
   NumFin_ = config["NumFin"]["value"];
   
-  NmuTrack_ = config["NmuTrack"]["value"];
+  NumTrack_ = config["NumTrack"]["value"];
 
   Z3Seed_ = config["z3_seed"]["value"];
 

@@ -28,11 +28,29 @@ ruleParameter::ruleParameter(const std::string &config_path, int metal_num) {
     M_width_.push_back(std::stoi(config["M" + std::to_string(i) + "_width"]["value"].get<std::string>()));
     std::string lower_v_en_key = "V" + std::to_string(i -1) + "_M" + std::to_string(i) + "_EN";
     if (config.contains(lower_v_en_key)) {
-      V_EN_[lower_v_en_key] = config[lower_v_en_key]["value"].get<std::vector<std::vector<int>>>();
+      auto string_vec_2d = config[lower_v_en_key]["value"].get<std::vector<std::vector<std::string>>>();
+      std::vector<std::vector<int>> int_vec_2d;
+      for (const auto& row_str : string_vec_2d) {
+        std::vector<int> row_int;
+        for (const auto& s : row_str) {
+          row_int.push_back(std::stoi(s));
+        }
+        int_vec_2d.push_back(row_int);
+      }
+      V_EN_[lower_v_en_key] = int_vec_2d;
     }
     std:: string upper_v_en_key = "V" + std::to_string(i) + "_M" + std::to_string(i) + "_EN";
     if (config.contains(upper_v_en_key)) {
-      V_EN_[upper_v_en_key] = config[upper_v_en_key]["value"].get<std::vector<std::vector<int>>>();
+      auto string_vec_2d = config[upper_v_en_key]["value"].get<std::vector<std::vector<std::string>>>();
+      std::vector<std::vector<int>> int_vec_2d;
+      for (const auto& row_str : string_vec_2d) {
+        std::vector<int> row_int;
+        for (const auto& s : row_str) {
+          row_int.push_back(std::stoi(s));
+        }
+        int_vec_2d.push_back(row_int);
+      }
+      V_EN_[upper_v_en_key] = int_vec_2d;
     }
   }
 }

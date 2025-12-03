@@ -11,23 +11,22 @@
 #include <string>
 #include <vector>
 
-#include "graph.hpp"
-#include "obj.hpp"
+#include "schematic.hpp"
 #include "dbConfig.hpp"
 #include "ruleParameter.hpp"
 
 class SMTCell {
     public:
-        SMTCell(const dbConfig& config, const ruleParameter& ruleParam);
+        SMTCell(const dbConfig* config, const ruleParameter* ruleParam);
         ~SMTCell() = default;
 
     private:
-        void initTrackInfo()
+        void initTrackInfo();
 
 
         // config and rule param
-        const dbConfig& config_;
-        const ruleParameter& ruleParam_;
+        const dbConfig* config_;
+        const ruleParameter* ruleParam_;
 
         //Track info
         int TrackNum_;
